@@ -22,6 +22,18 @@ lazy val bytes = project.settings(
   )
 )
 
+lazy val channel = project.settings(
+  name := "channel",
+  version := "1.0.0-SNAPSHOT",
+  deps ++= Seq(
+    hammerlab("bytes") % "1.0.0-SNAPSHOT",
+    hammerlab("io") % "1.0.0-SNAPSHOT",
+    math % "1.0.0-SNAPSHOT",
+    paths % "1.0.0-SNAPSHOT",
+    slf4j
+  )
+)
+
 lazy val io = project.settings(
   name := "io",
   version := "1.0.0",
