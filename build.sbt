@@ -43,7 +43,6 @@ lazy val io = cross.settings(
     "hammerlab.indent.tab"
   )
 )
-lazy val `io.js`  = io.js
 lazy val `io.jvm` = io.jvm.settings(
   dep(paths),
   consoleImport("hammerlab.path._")
