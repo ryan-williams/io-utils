@@ -21,8 +21,8 @@ case class CachingChannel[Channel <: SeekableByteChannel](channel: Channel)(
   implicit config: Config
 )
   extends SeekableByteChannel
-    with BufferByteChannel
-    with Logging {
+     with BufferByteChannel
+     with Logging {
 
   val Config(blockSize, maxReadAttempts, maximumSize) = config
   val maxNumBlocks = ceil(maximumSize, blockSize).toInt

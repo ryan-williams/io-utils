@@ -23,7 +23,7 @@ trait SeekableByteChannel
 object SeekableByteChannel {
   case class ChannelByteChannel(ch: channels.SeekableByteChannel)
     extends SeekableByteChannel
-  with BufferByteChannel {
+       with   BufferByteChannel {
 
     override protected def _read(dst: ByteBuffer): Int = ch.read(dst)
 

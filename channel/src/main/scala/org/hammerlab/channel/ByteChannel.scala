@@ -14,7 +14,7 @@ import org.hammerlab.io.Buffer
  */
 trait ByteChannel
   extends InputStream
-    with ReadableByteChannel {
+     with ReadableByteChannel {
 
   protected var _position = 0L
 
@@ -247,7 +247,7 @@ trait ArrayByteChannel
             -1
           else
             idx - off
-          )
+        )
 
       bytes(idx) = b.toByte
       idx += 1
