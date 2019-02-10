@@ -9,7 +9,8 @@ lazy val bytes = cross.settings(
   v"1.3.0",
   dep(
     case_app,
-    cats
+    cats,
+    sourcecode
   )
 )
 lazy val `bytes-x` = bytes.x

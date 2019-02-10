@@ -7,11 +7,11 @@ package object bytes {
   implicit class BytesWrapper(val value: Int)
     extends AnyVal {
     def  B: Bytes = new  B(value)
-    def KB: Bytes = new KB(value)
-    def MB: Bytes = new MB(value)
-    def GB: Bytes = new GB(value)
-    def TB: Bytes = new TB(value)
-    def PB: Bytes = new PB(value)
-    def EB: Bytes = new EB(value)
+    def KB: Bytes = new KiB(value)
+    def MB: Bytes = new MiB(value)
+    def GB: Bytes = new GiB(value)
+    def TB: Bytes = new TiB(value)
+    def PB: Bytes = new PiB(value)
+    def EB: Bytes = new EiB(value)
   }
 }
